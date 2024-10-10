@@ -1,0 +1,160 @@
+Id: 1
+Name: Laptop Apple MacBook Air 13 2020 Space Gray
+Price: $15490 MDL
+
+Id: 2
+Name: Laptop Apple MacBook Air 13 2020 Space Gray
+Price: $15490 MDL
+
+Id: 3
+Name: Laptop Apple MacBook Air 13 2020 Gold
+Price: $18990 MDL
+
+Id: 4
+Name: Laptop Apple MacBook Air 13 2020 Gold
+Price: $18990 MDL
+
+Id: 5
+Name: Laptop Lenovo IdeaPad Gaming 3 15ACH6-8URK Shadow Black
+Price: $14990 MDL
+
+Id: 6
+Name: Laptop Lenovo IdeaPad Gaming 3 15ACH6-8URK Shadow Black
+Price: $14990 MDL
+
+Id: 7
+Name: Laptop Apple MacBook Air 13.6 2022 Silver
+Price: $20990 MDL
+
+Id: 8
+Name: Laptop Apple MacBook Air 13.6 2022 Silver
+Price: $20990 MDL
+
+Id: 9
+Name: Laptop Asus ROG Strix Scar 15 G533ZW Black
+Price: $54490 MDL
+
+Id: 10
+Name: Laptop Asus ROG Strix Scar 15 G533ZW Black
+Price: $54490 MDL
+
+Id: 11
+Name: Laptop Lenovo IdeaPad Slim 3 15AMN8 Arctic Gray
+Price: $8490 MDL
+
+Id: 12
+Name: Laptop Lenovo IdeaPad Slim 3 15AMN8 Arctic Gray
+Price: $8490 MDL
+
+Id: 13
+Name: Laptop Lenovo IdeaPad Slim 3 16IAH8-07RK Arctic Gray
+Price: $10890 MDL
+
+Id: 14
+Name: Laptop Lenovo IdeaPad Slim 3 16IAH8-07RK Arctic Gray
+Price: $10890 MDL
+
+Id: 15
+Name: Laptop Lenovo IdeaPad 3 15IAU7-QNRK Arctic Gray
+Price: $6290 MDL
+
+Id: 16
+Name: Laptop Lenovo IdeaPad 3 15IAU7-QNRK Arctic Gray
+Price: $6290 MDL
+
+Id: 17
+Name: Laptop Asus ROG Strix SCAR 18 G834JZR-N6019 Off Black
+Price: $54990 MDL
+
+Id: 18
+Name: Laptop Asus ROG Strix SCAR 18 G834JZR-N6019 Off Black
+Price: $54990 MDL
+
+Id: 19
+Name: Laptop Asus Vivobook Go 15 E1504FA-BQ210 Mixed Black
+Price: $6690 MDL
+
+Id: 20
+Name: Laptop Asus Vivobook Go 15 E1504FA-BQ210 Mixed Black
+Price: $6690 MDL
+
+Id: 21
+Name: Laptop Asus VivoBook 14 K413EA Blue
+Price: $10990 MDL
+
+Id: 22
+Name: Laptop Asus VivoBook 14 K413EA Blue
+Price: $10990 MDL
+
+Id: 23
+Name: Laptop Lenovo IdeaPad Slim 5 16IRL8-2LRK Cloud Gray
+Price: $16990 MDL
+
+Id: 24
+Name: Laptop Lenovo IdeaPad Slim 5 16IRL8-2LRK Cloud Gray
+Price: $16990 MDL
+
+Id: 25
+Name: Laptop Asus TUF Gaming A15 FA506NF Graphite Black
+Price: $15990 MDL
+
+Id: 26
+Name: Laptop Asus TUF Gaming A15 FA506NF Graphite Black
+Price: $15990 MDL
+
+Id: 27
+Name: Laptop Asus Vivobook Go 15 E1504FA-BQ832W Mixed Black
+Price: $9490 MDL
+
+Id: 28
+Name: Laptop Asus Vivobook Go 15 E1504FA-BQ832W Mixed Black
+Price: $9490 MDL
+
+Id: 29
+Name: Laptop Asus Vivobook Go 15 E1504FA-BQ090 Mixed Black
+Price: $8490 MDL
+
+Id: 30
+Name: Laptop Asus Vivobook Go 15 E1504FA-BQ090 Mixed Black
+Price: $8490 MDL
+
+Id: 31
+Name: Laptop Apple MacBook Pro 16 2023 Silver
+Price: $79990 MDL
+
+Id: 32
+Name: Laptop Apple MacBook Pro 16 2023 Silver
+Price: $79990 MDL
+
+Id: 33
+Name: Laptop Lenovo IdeaPad Slim 3 16IAH8 Arctic Gray
+Price: $9890 MDL
+
+Id: 34
+Name: Laptop Lenovo IdeaPad Slim 3 16IAH8 Arctic Gray
+Price: $9890 MDL
+
+Id: 35
+Name: Laptop Lenovo IdeaPad 1 15ALC7-AHRK Gray
+Price: $10990 MDL
+
+Id: 36
+Name: Laptop Lenovo IdeaPad 1 15ALC7-AHRK Gray
+Price: $10990 MDL
+
+Id: 37
+Name: Laptop Lenovo IdeaPad Slim 3 15IAN8 Arctic Gray
+Price: $6590 MDL
+
+Id: 38
+Name: Laptop Lenovo IdeaPad Slim 3 15IAN8 Arctic Gray
+Price: $6590 MDL
+
+Id: 39
+Name: Laptop Asus VivoBook 17 X1704ZA Blue
+Price: $10990 MDL
+
+Id: 40
+Name: Laptop Asus VivoBook 17 X1704ZA Blue
+Price: $10990 MDL
+
