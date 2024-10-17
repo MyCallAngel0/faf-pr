@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Laptop Lenovo IdeaPad 5 15IAL7-GXRK Cloud Gray",
+        "price": 594.72,
+        "currency": "EUR",
+        "brand": "Lenovo",
+        "link": "https://darwin.md/laptop-lenovo-ideapad-5-15ial7-core-i5-1235u-16-gb-512-gb-vga-integrata-gray.html"
+    },
+    {
+        "name": "Laptop Lenovo IdeaPad 5 15IAL7-GXRK Cloud Gray",
+        "price": 594.72,
+        "currency": "EUR",
+        "brand": "Lenovo",
+        "link": "https://darwin.md/laptop-lenovo-ideapad-5-15ial7-core-i5-1235u-16-gb-512-gb-vga-integrata-gray.html"
+    },
+    {
+        "name": "Laptop Asus Vivobook 17X K3704VA-AU051 Indie Black",
+        "price": 646.48,
+        "currency": "EUR",
+        "brand": "Asus",
+        "link": "https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html"
+    },
+    {
+        "name": "Laptop Asus Vivobook 17X K3704VA-AU051 Indie Black",
+        "price": 646.48,
+        "currency": "EUR",
+        "brand": "Asus",
+        "link": "https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html"
+    },
+    {
+        "name": "Laptop Asus VivoBook 15 X1504ZA Quiet Blue",
+        "price": 594.72,
+        "currency": "EUR",
+        "brand": "Asus",
+        "link": "https://darwin.md/laptop-asus-vivobook-15-x1504za-core-i7-1255u-16-gb-512-gb-vga-integrata-blue.html"
+    },
+    {
+        "name": "Laptop Asus VivoBook 15 X1504ZA Quiet Blue",
+        "price": 594.72,
+        "currency": "EUR",
+        "brand": "Asus",
+        "link": "https://darwin.md/laptop-asus-vivobook-15-x1504za-core-i7-1255u-16-gb-512-gb-vga-integrata-blue.html"
+    },
+    {
+        "name": "Laptop Acer Nitro V 15 ANV15-41-R1ZV Black",
+        "price": 724.12,
+        "currency": "EUR",
+        "brand": "Acer",
+        "link": "https://darwin.md/laptop-acer-nitro-v-15-anv15-41-r1zv-ryzen-5-7535hs-16-gb-geforce-rtx-2050-black.html"
+    },
+    {
+        "name": "Laptop Acer Nitro V 15 ANV15-41-R1ZV Black",
+        "price": 724.12,
+        "currency": "EUR",
+        "brand": "Acer",
+        "link": "https://darwin.md/laptop-acer-nitro-v-15-anv15-41-r1zv-ryzen-5-7535hs-16-gb-geforce-rtx-2050-black.html"
+    },
+    {
+        "name": "Laptop Asus Vivobook 17X M3704YA Indie Black",
+        "price": 542.96,
+        "currency": "EUR",
+        "brand": "Asus",
+        "link": "https://darwin.md/laptop-asus-vivobook-17x-m3704ya-ryzen-5-7430u-16-gb-512-gb-vga-integrata-black.html"
+    },
+    {
+        "name": "Laptop Asus Vivobook 17X M3704YA Indie Black",
+        "price": 542.96,
+        "currency": "EUR",
+        "brand": "Asus",
+        "link": "https://darwin.md/laptop-asus-vivobook-17x-m3704ya-ryzen-5-7430u-16-gb-512-gb-vga-integrata-black.html"
+    }
+]
