@@ -1,239 +1,279 @@
 Id: 1
 Name: Laptop Lenovo IdeaPad 5 15IAL7-GXRK Cloud Gray
+Brand: Lenovo
 Price: 11490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-5-15ial7-core-i5-1235u-16-gb-512-gb-vga-integrata-gray.html
 
 Id: 2
 Name: Laptop Lenovo IdeaPad 5 15IAL7-GXRK Cloud Gray
+Brand: Lenovo
 Price: 11490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-5-15ial7-core-i5-1235u-16-gb-512-gb-vga-integrata-gray.html
 
 Id: 3
 Name: Laptop Asus ROG Strix G18 G814JIR-N6055 Eclipse Gray
+Brand: Asus
 Price: 39990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-rog-strix-g18-g814jir-n6055-core-i9-14900hx-32-gb-1-tb-geforce-rtx-4070-gray.html
 
 Id: 4
 Name: Laptop Asus ROG Strix G18 G814JIR-N6055 Eclipse Gray
+Brand: Asus
 Price: 39990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-rog-strix-g18-g814jir-n6055-core-i9-14900hx-32-gb-1-tb-geforce-rtx-4070-gray.html
 
 Id: 5
 Name: Laptop Lenovo IdeaPad 1 15ALC7 Cloud Gray
+Brand: Lenovo
 Price: 7490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-1-15alc7-ryzen-5-5700u-16-gb-512-gb-vga-integrata-gray.html
 
 Id: 6
 Name: Laptop Lenovo IdeaPad 1 15ALC7 Cloud Gray
+Brand: Lenovo
 Price: 7490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-1-15alc7-ryzen-5-5700u-16-gb-512-gb-vga-integrata-gray.html
 
 Id: 7
 Name: Laptop Asus Vivobook 17X K3704VA-AU051 Indie Black
+Brand: Asus
 Price: 12490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html
 
 Id: 8
 Name: Laptop Asus Vivobook 17X K3704VA-AU051 Indie Black
+Brand: Asus
 Price: 12490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html
 
 Id: 9
 Name: Laptop Asus Vivobook Go 15 E1504FA Cool Silver
+Brand: Asus
 Price: 7990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-go-15-e1504fa-ryzen-5-7520u-8-gb-512-gb-vga-integrata-silver.html
 
 Id: 10
 Name: Laptop Asus Vivobook Go 15 E1504FA Cool Silver
+Brand: Asus
 Price: 7990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-go-15-e1504fa-ryzen-5-7520u-8-gb-512-gb-vga-integrata-silver.html
 
 Id: 11
 Name: Laptop Asus VivoBook S 15 OLED K5504VA Midnight Black
+Brand: Asus
 Price: 20990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-s-15-oled-k5504va-core-i9-13900h-16-gb-1-tb-vga-integrata-black.html
 
 Id: 12
 Name: Laptop Asus VivoBook S 15 OLED K5504VA Midnight Black
+Brand: Asus
 Price: 20990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-s-15-oled-k5504va-core-i9-13900h-16-gb-1-tb-vga-integrata-black.html
 
 Id: 13
 Name: Laptop Lenovo Legion Pro 7 16IRX9H Eclipse Black
+Brand: Lenovo
 Price: 49490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-legion-pro-7-16irx9h-core-i9-14900hx-32-gb-1-tb-geforce-rtx-4080-black.html
 
 Id: 14
 Name: Laptop Lenovo Legion Pro 7 16IRX9H Eclipse Black
+Brand: Lenovo
 Price: 49490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-legion-pro-7-16irx9h-core-i9-14900hx-32-gb-1-tb-geforce-rtx-4080-black.html
 
 Id: 15
 Name: Laptop Asus VivoBook 15 X1504ZA Quiet Blue
+Brand: Asus
 Price: 11490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-15-x1504za-core-i7-1255u-16-gb-512-gb-vga-integrata-blue.html
 
 Id: 16
 Name: Laptop Asus VivoBook 15 X1504ZA Quiet Blue
+Brand: Asus
 Price: 11490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-15-x1504za-core-i7-1255u-16-gb-512-gb-vga-integrata-blue.html
 
 Id: 17
 Name: Laptop Lenovo Yoga Slim 6 14IRH8-83E0 Slate Gray
+Brand: Lenovo
 Price: 18990
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-yoga-slim-6-14irh8-83e0-core-i7-13700h-16-gb-1-tb-vga-integrata-gray.html
 
 Id: 18
 Name: Laptop Lenovo Yoga Slim 6 14IRH8-83E0 Slate Gray
+Brand: Lenovo
 Price: 18990
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-yoga-slim-6-14irh8-83e0-core-i7-13700h-16-gb-1-tb-vga-integrata-gray.html
 
 Id: 19
 Name: Laptop Acer Nitro V 15 ANV15-41-R1ZV Black
+Brand: Acer
 Price: 13990
 Currency: MDL
 Link: https://darwin.md/laptop-acer-nitro-v-15-anv15-41-r1zv-ryzen-5-7535hs-16-gb-geforce-rtx-2050-black.html
 
 Id: 20
 Name: Laptop Acer Nitro V 15 ANV15-41-R1ZV Black
+Brand: Acer
 Price: 13990
 Currency: MDL
 Link: https://darwin.md/laptop-acer-nitro-v-15-anv15-41-r1zv-ryzen-5-7535hs-16-gb-geforce-rtx-2050-black.html
 
 Id: 21
 Name: Laptop Asus Vivobook 17X M3704YA Indie Black
+Brand: Asus
 Price: 10490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-17x-m3704ya-ryzen-5-7430u-16-gb-512-gb-vga-integrata-black.html
 
 Id: 22
 Name: Laptop Asus Vivobook 17X M3704YA Indie Black
+Brand: Asus
 Price: 10490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-17x-m3704ya-ryzen-5-7430u-16-gb-512-gb-vga-integrata-black.html
 
 Id: 23
 Name: Laptop Asus Vivobook S 14 OLED M5406WA Cool Silver
+Brand: Asus
 Price: 22990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-s-14-oled-m5406wa-ryzen-ai-9-9-hx-370-32-gb-1-tb-vga-integrata-silver.html
 
 Id: 24
 Name: Laptop Asus Vivobook S 14 OLED M5406WA Cool Silver
+Brand: Asus
 Price: 22990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-s-14-oled-m5406wa-ryzen-ai-9-9-hx-370-32-gb-1-tb-vga-integrata-silver.html
 
 Id: 25
 Name: Laptop Asus VivoBook S 16 OLED M5606WA Cool Silver
+Brand: Asus
 Price: 21990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-s-16-oled-m5606wa-ryzen-ai-9-ai-9-365-24-gb-1-tb-vga-integrata-silver.html
 
 Id: 26
 Name: Laptop Asus VivoBook S 16 OLED M5606WA Cool Silver
+Brand: Asus
 Price: 21990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-s-16-oled-m5606wa-ryzen-ai-9-ai-9-365-24-gb-1-tb-vga-integrata-silver.html
 
 Id: 27
 Name: Laptop Asus TUF Gaming A16 FA608WI Jaeger Gray
+Brand: Asus
 Price: 39990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-tuf-gaming-a16-fa608wi-ryzen-ai-9-9-hx-370-32-gb-1-tb-geforce-rtx-4070-gray-freedos.html
 
 Id: 28
 Name: Laptop Asus TUF Gaming A16 FA608WI Jaeger Gray
+Brand: Asus
 Price: 39990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-tuf-gaming-a16-fa608wi-ryzen-ai-9-9-hx-370-32-gb-1-tb-geforce-rtx-4070-gray-freedos.html
 
 Id: 29
 Name: Laptop Apple MacBook Air 13 2020 Space Gray
+Brand: Apple
 Price: 15590
 Currency: MDL
 Link: https://darwin.md/macbook-air-13-2020-apple-space-gray-mgn63rua.html
 
 Id: 30
 Name: Laptop Apple MacBook Air 13 2020 Space Gray
+Brand: Apple
 Price: 15590
 Currency: MDL
 Link: https://darwin.md/macbook-air-13-2020-apple-space-gray-mgn63rua.html
 
 Id: 31
 Name: Laptop Apple MacBook Air 13 2020 Gold
+Brand: Apple
 Price: 18990
 Currency: MDL
 Link: https://darwin.md/macbook-air-13-2020-apple-gold-mgnd3rua.html
 
 Id: 32
 Name: Laptop Apple MacBook Air 13 2020 Gold
+Brand: Apple
 Price: 18990
 Currency: MDL
 Link: https://darwin.md/macbook-air-13-2020-apple-gold-mgnd3rua.html
 
 Id: 33
 Name: Laptop Lenovo IdeaPad Gaming 3 15ACH6-8URK Shadow Black
+Brand: Lenovo
 Price: 14990
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-gaming-3-15ach6-8urk-ryzen-5-5500h-16-gb-512-gb-geforce-rtx-2050-black.html
 
 Id: 34
 Name: Laptop Lenovo IdeaPad Gaming 3 15ACH6-8URK Shadow Black
+Brand: Lenovo
 Price: 14990
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-gaming-3-15ach6-8urk-ryzen-5-5500h-16-gb-512-gb-geforce-rtx-2050-black.html
 
 Id: 35
 Name: Laptop Apple MacBook Air 13.6 2022 Silver
+Brand: Apple
 Price: 22490
 Currency: MDL
 Link: https://darwin.md/laptop-apple-macbook-air-136-2022-mlxy3ru-a-rus-silver.html
 
 Id: 36
 Name: Laptop Apple MacBook Air 13.6 2022 Silver
+Brand: Apple
 Price: 22490
 Currency: MDL
 Link: https://darwin.md/laptop-apple-macbook-air-136-2022-mlxy3ru-a-rus-silver.html
 
 Id: 37
 Name: Laptop Asus ROG Strix Scar 15 G533ZW Black
+Brand: Asus
 Price: 54490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-rog-strix-scar-15-g533zw-black.html
 
 Id: 38
 Name: Laptop Asus ROG Strix Scar 15 G533ZW Black
+Brand: Asus
 Price: 54490
 Currency: MDL
 Link: https://darwin.md/laptop-asus-rog-strix-scar-15-g533zw-black.html
 
 Id: 39
 Name: Laptop Lenovo IdeaPad Slim 3 15AMN8 Arctic Gray
+Brand: Lenovo
 Price: 8490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-slim-3-15amn8-ryzen-5-7520u-8-gb-512-gb-vga-integrata-gray.html
 
 Id: 40
 Name: Laptop Lenovo IdeaPad Slim 3 15AMN8 Arctic Gray
+Brand: Lenovo
 Price: 8490
 Currency: MDL
 Link: https://darwin.md/laptop-lenovo-ideapad-slim-3-15amn8-ryzen-5-7520u-8-gb-512-gb-vga-integrata-gray.html
