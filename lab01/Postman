@@ -11,4 +11,4 @@ Body:
     raw-JSON:
         files/deserialized_json.txt (status=200)
     raw-XML
-        files/serialized_xml.txt (status=200)
+        files/deserialized_xml.txt (status=200)

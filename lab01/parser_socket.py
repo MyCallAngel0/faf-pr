@@ -1,5 +1,6 @@
 import socket, ssl, json, re
 from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
 # Task 7
 host = 'darwin.md'
 port = 443
@@ -55,7 +56,7 @@ if use_tcp:
 
 
 # Task 8
-def serialize_to_json(prod_list) -> str:
+def json_serialize(prod_list) -> str:
     serialized_list = "L:["
     for d in prod_list:
         serialized_list += "D:"
@@ -73,31 +74,39 @@ def serialize_to_json(prod_list) -> str:
     return serialized_list
 
 
-def serialize_to_xml(prod_list) -> str:
-    serialized_list = '<Laptops>\n\t'
-    for d in prod_list:
-        serialized_list += '<laptop>\n'
-        for key, value in d.items():
-            if isinstance(value, str):
-                serialized_list += f"\t\t<{key}>{value}</{key}>\n"
-            elif isinstance(value, int):
-                serialized_list += f"\t\t<{key}>{value}</{key}>\n"
-            elif isinstance(value, float):
-                serialized_list += f"\t\t<{key}>{value}</{key}>\n"
-        serialized_list += "\t</laptop>\n"
-    serialized_list += "</Laptops>"
-    return serialized_list
+def xml_serialize(xml_string):
+    result = []
+
+    laptops = re.findall(r'<laptop>(.*?)</laptop>', xml_string, re.DOTALL)
+
+    for laptop in laptops:
+        item = {}
+
+        pairs = re.findall(r'<(.*?)>(.*?)</\1>', laptop, re.DOTALL)
+
+        for pair in pairs:
+            key, value = pair
+            if key == 'price':
+                item[key] = float(value)
+            else:
+                item[key] = value
+
+        result.append(item)
+    return json_serialize(result)
 
 
 # Using locally saved parsed data to not to DDOS or something
 with open('data.json', 'r') as file:
     product_list = json.load(file)
 
+with open('files/xml.txt', 'r') as file:
+    xml_string = file.read()
+
 with open('files/serialized_json.txt', 'w', encoding='utf-8') as file:
-    file.write(serialize_to_json(product_list))
+    file.write(json_serialize(product_list))
 
 with open('files/serialized_xml.txt', 'w', encoding='utf-8') as file:
-    file.write(serialize_to_xml(product_list))
+    file.write(xml_serialize(xml_string))
 
 
 # Task 9
@@ -125,36 +134,45 @@ def deserialize_json(serialized_json):
 
 
 def deserialize_xml(serialized_xml):
-    result = []
+    serialized_xml = serialized_xml[2:-1].split("; ")
 
-    laptops = re.findall(r'<laptop>(.*?)</laptop>', serialized_xml, re.DOTALL)
+    output = "<Laptops>\n"
 
-    for laptop in laptops:
-        item = {}
+    for item_string in serialized_xml:
+        output += "\t<laptop>\n"
 
-        pairs = re.findall(r'<(.*?)>(.*?)</\1>', laptop, re.DOTALL)
-
+        pairs = item_string.split(", ")
         for pair in pairs:
-            key, value = pair
-            if key == 'price':
-                item[key] = float(value)
-            else:
-                item[key] = value
+            key_value = pair.split(":v:")
+            if len(key_value) != 2:
+                continue
 
-        result.append(item)
+            key = key_value[0].split("(")[-1].split(")")[0].strip()
+            value = key_value[1]
 
-    return result
+            if value.startswith("float("):
+                value = value[6:-1]
+            elif value.startswith("str("):
+                value = value[4:-1]
+
+            output += f"\t\t<{key}>{value}</{key}>\n"
+
+        output += "\t</laptop>\n"
+        
+    output += "</Laptops>"
+
+    return output
 
 
 with open('files/serialized_json.txt', 'r', encoding='utf-8') as file:
     serialized_json = file.readline()
 
 with open('files/serialized_xml.txt', 'r', encoding='utf-8') as file:
-    serialized_xml = ''.join(file.readlines()).replace('\n', '').replace('\t', '')
+    serialized_xml = file.readline()
 
 
 with open('files/deserialized_json.txt', 'w', encoding='utf-8') as file:
     json.dump(deserialize_json(serialized_json), file, indent=4)
 
 with open('files/deserialized_xml.txt', 'w', encoding='utf-8') as file:
-    json.dump(deserialize_xml(serialized_xml), file, indent=4)
+    file.write(deserialize_xml(serialized_xml))
