@@ -1,0 +1,14 @@
+Authorization
+    Auth Type: Basic Auth
+            Username: 201
+            Password: 404
+
+Headers:
+    Content-Type: application/xml
+    Content-Type: application/json
+
+Body:
+    raw-JSON:
+        files/deserialized_json.txt (status=200)
+    raw-XML
+        files/serialized_xml.txt (status=200)

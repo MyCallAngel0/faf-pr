@@ -93,10 +93,10 @@ def serialize_to_xml(prod_list) -> str:
 with open('data.json', 'r') as file:
     product_list = json.load(file)
 
-with open('serialized_json.txt', 'w', encoding='utf-8') as file:
+with open('files/serialized_json.txt', 'w', encoding='utf-8') as file:
     file.write(serialize_to_json(product_list))
 
-with open('serialized_xml.txt', 'w', encoding='utf-8') as file:
+with open('files/serialized_xml.txt', 'w', encoding='utf-8') as file:
     file.write(serialize_to_xml(product_list))
 
 
@@ -146,15 +146,15 @@ def deserialize_xml(serialized_xml):
     return result
 
 
-with open('serialized_json.txt', 'r', encoding='utf-8') as file:
+with open('files/serialized_json.txt', 'r', encoding='utf-8') as file:
     serialized_json = file.readline()
 
-with open('serialized_xml.txt', 'r', encoding='utf-8') as file:
+with open('files/serialized_xml.txt', 'r', encoding='utf-8') as file:
     serialized_xml = ''.join(file.readlines()).replace('\n', '').replace('\t', '')
 
 
-with open('deserialized_json.txt', 'w', encoding='utf-8') as file:
+with open('files/deserialized_json.txt', 'w', encoding='utf-8') as file:
     json.dump(deserialize_json(serialized_json), file, indent=4)
 
-with open('deserialized_xml.txt', 'w', encoding='utf-8') as file:
+with open('files/deserialized_xml.txt', 'w', encoding='utf-8') as file:
     json.dump(deserialize_xml(serialized_xml), file, indent=4)

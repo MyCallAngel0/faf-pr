@@ -34,7 +34,7 @@ for product in products:
 
 
 id: int = 1
-with open('products-task-three.txt', 'w', encoding='utf-8') as file:
+with open('files/products-task-three.txt', 'w', encoding='utf-8') as file:
     for product in product_list:
         file.write(f"Id: {id}\n")
         file.write(f"Name: {product['name']}\n")
@@ -71,7 +71,7 @@ for product in products:
 
 
 id = 1
-with open('products-task-four.txt', 'w', encoding='utf-8') as file:
+with open('files/products-task-four.txt', 'w', encoding='utf-8') as file:
     for product in product_list:
         file.write(f"Id: {id}\n")
         file.write(f"Name: {product['name']}\n")
@@ -84,7 +84,7 @@ with open('products-task-four.txt', 'w', encoding='utf-8') as file:
 
 # Task 5
 id = 1
-with open('products-task-five.txt', 'w', encoding='utf-8') as file:
+with open('files/products-task-five.txt', 'w', encoding='utf-8') as file:
     for product in product_list:
         if isinstance(product['brand'], str) and isinstance(product['price'], int):
             file.write(f"Id: {id}\n")
@@ -118,7 +118,7 @@ mapped_list = list(map(mop, product_list))
 filtered_list = list(filter(filt, product_list))
 
 id = 1
-with open('products-task-six.txt', 'w', encoding='utf-8') as file:
+with open('files/products-task-six.txt', 'w', encoding='utf-8') as file:
     for product in filtered_list:
         file.write(f"Id: {id}\n")
         file.write(f"Name: {product['name']}\n")

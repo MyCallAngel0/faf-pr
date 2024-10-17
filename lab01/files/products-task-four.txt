@@ -55,32 +55,32 @@ Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html
 
 Id: 9
-Name: Laptop Asus Vivobook Go 15 E1504FA Cool Silver
+Name: Laptop Asus VivoBook S 15 OLED K5504VA Midnight Black
 Brand: Asus
-Price: 7990
+Price: 20990
 Currency: MDL
-Link: https://darwin.md/laptop-asus-vivobook-go-15-e1504fa-ryzen-5-7520u-8-gb-512-gb-vga-integrata-silver.html
+Link: https://darwin.md/laptop-asus-vivobook-s-15-oled-k5504va-core-i9-13900h-16-gb-1-tb-vga-integrata-black.html
 
 Id: 10
+Name: Laptop Asus VivoBook S 15 OLED K5504VA Midnight Black
+Brand: Asus
+Price: 20990
+Currency: MDL
+Link: https://darwin.md/laptop-asus-vivobook-s-15-oled-k5504va-core-i9-13900h-16-gb-1-tb-vga-integrata-black.html
+
+Id: 11
 Name: Laptop Asus Vivobook Go 15 E1504FA Cool Silver
 Brand: Asus
 Price: 7990
 Currency: MDL
 Link: https://darwin.md/laptop-asus-vivobook-go-15-e1504fa-ryzen-5-7520u-8-gb-512-gb-vga-integrata-silver.html
 
-Id: 11
-Name: Laptop Asus VivoBook S 15 OLED K5504VA Midnight Black
-Brand: Asus
-Price: 20990
-Currency: MDL
-Link: https://darwin.md/laptop-asus-vivobook-s-15-oled-k5504va-core-i9-13900h-16-gb-1-tb-vga-integrata-black.html
-
 Id: 12
-Name: Laptop Asus VivoBook S 15 OLED K5504VA Midnight Black
+Name: Laptop Asus Vivobook Go 15 E1504FA Cool Silver
 Brand: Asus
-Price: 20990
+Price: 7990
 Currency: MDL
-Link: https://darwin.md/laptop-asus-vivobook-s-15-oled-k5504va-core-i9-13900h-16-gb-1-tb-vga-integrata-black.html
+Link: https://darwin.md/laptop-asus-vivobook-go-15-e1504fa-ryzen-5-7520u-8-gb-512-gb-vga-integrata-silver.html
 
 Id: 13
 Name: Laptop Lenovo Legion Pro 7 16IRX9H Eclipse Black
