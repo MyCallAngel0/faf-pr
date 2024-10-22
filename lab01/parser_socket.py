@@ -57,7 +57,7 @@ if use_tcp:
 
 # Task 8
 def json_serialize(prod_list) -> str:
-    serialized_list = "L:["
+    serialized_list = "A:["
     for d in prod_list:
         serialized_list += "D:"
         for i, (key, value) in enumerate(d.items()):
@@ -110,58 +110,71 @@ with open('files/serialized_xml.txt', 'w', encoding='utf-8') as file:
 
 
 # Task 9
-def deserialize_json(serialized_json):
-    serialized_json = serialized_json[2:]
-    entries = serialized_json.split('D:')[1:]
-    result = []
-
-    for entry in entries:
-        item = {}
-        pairs = re.findall(r'k:str\((.*?)\):v:(str|int|float)\((.*?)\)', entry)
-        for pair in pairs:
-            key = pair[0]
-            value_type = pair[1]
-            value = pair[2]
-
-            if value_type == 'int':
-                item[key] = int(value)
-            elif value_type == 'float':
-                item[key] = float(value)
-            else:
-                item[key] = value
-        result.append(item)
+def custom_serialization(data):
+    result = ""
+    if isinstance(data, list):
+        result += "A:["
+        for item in data:
+            result += custom_serialization(item)
+        result = result.rstrip() + "]"
+    elif isinstance(data, dict):
+        result += "D:"
+        for i, (key, value) in enumerate(data.items()):
+            result += f"k:str({key}):v:" + custom_serialization(value)
+            if i < len(data) - 1:
+                result += ", "
+        result += "; "
+    elif isinstance(data, str):
+        result += f"str({data})"
+    elif isinstance(data, int):
+        result += f"str({data})"
+    elif isinstance(data, float):
+        result += f"str({data})"
     return result
 
 
-def deserialize_xml(serialized_xml):
-    serialized_xml = serialized_xml[2:-1].split("; ")
+def custom_deserialization(data):
+    idx = 0
+    def parse_value():
+        nonlocal idx
+        if data.startswith("A:[", idx):
+            idx += 3
+            result = []
+            while data[idx] != ']':
+                result.append(parse_value())
+                if data[idx] == ',':
+                    idx += 1
+            idx += 1
+            return result
 
-    output = "<Laptops>\n"
+        elif data.startswith("D:", idx):
+            idx += 2
+            result = {}
+            while data[idx] != ';':
+                if data.startswith("k:str(", idx):
+                    idx += 6
+                    key_end = data.index("):v:", idx)
+                    key = data[idx:key_end]
+                    idx = key_end + 4
+                    result[key] = parse_value()
+                    if data[idx] == ',':
+                        idx += 2
+            idx += 1
+            return result
 
-    for item_string in serialized_xml:
-        output += "\t<laptop>\n"
+        elif data.startswith("str(", idx):
+            idx += 4
+            end_idx = data.index(")", idx)
+            value = data[idx:end_idx]
+            idx = end_idx + 1
+            if value.isdigit():
+                return int(value)
+            try:
+                return float(value)
+            except ValueError:
+                return value
 
-        pairs = item_string.split(", ")
-        for pair in pairs:
-            key_value = pair.split(":v:")
-            if len(key_value) != 2:
-                continue
-
-            key = key_value[0].split("(")[-1].split(")")[0].strip()
-            value = key_value[1]
-
-            if value.startswith("float("):
-                value = value[6:-1]
-            elif value.startswith("str("):
-                value = value[4:-1]
-
-            output += f"\t\t<{key}>{value}</{key}>\n"
-
-        output += "\t</laptop>\n"
-        
-    output += "</Laptops>"
-
-    return output
+    return parse_value()
 
 
 with open('files/serialized_json.txt', 'r', encoding='utf-8') as file:
@@ -170,9 +183,20 @@ with open('files/serialized_json.txt', 'r', encoding='utf-8') as file:
 with open('files/serialized_xml.txt', 'r', encoding='utf-8') as file:
     serialized_xml = file.readline()
 
+serializer1 = [
+    {
+        "key1": [2.5, 20, 18],
+        "key2": "hello"
+    }
+]
 
-with open('files/deserialized_json.txt', 'w', encoding='utf-8') as file:
-    json.dump(deserialize_json(serialized_json), file, indent=4)
+serializer2 = "Howdy"
 
-with open('files/deserialized_xml.txt', 'w', encoding='utf-8') as file:
-    file.write(deserialize_xml(serialized_xml))
+with open("files/custom_serialization.txt", 'w', encoding='utf-8') as file:
+    file.write(custom_serialization(serializer1))
+
+with open("files/custom_serialization.txt", 'r', encoding='utf-8') as file:
+    serialized_str = file.readline()
+
+with open("files/custom_deserialization.txt", 'w', encoding='utf-8') as file:
+    file.write(str(custom_deserialization(serialized_str)))
