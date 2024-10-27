@@ -1,6 +1,6 @@
 import socket, ssl, json, re
 from bs4 import BeautifulSoup
-import xml.etree.ElementTree as ET
+
 # Task 7
 host = 'darwin.md'
 port = 443
@@ -31,7 +31,7 @@ if use_tcp:
     headers, body = response.split('\r\n\r\n', 1)
 
     soup = BeautifulSoup(body, 'html.parser')
-    products = soup.find_all('a', attrs={'data-ga4': True}, title=True)
+    products = soup.find_all('a', attrs={'data-ga4': True})
 
     product_list = []
 
@@ -41,11 +41,12 @@ if use_tcp:
 
         data_ga4 = json.loads(product['data-ga4'])
 
-        name = product['title']
-
         ecommerce = data_ga4.get('ecommerce', {})
         price = ecommerce.get('value')
         currency = ecommerce.get('currency')
+
+        items = ecommerce.get('items', [])
+        name = items[0].get('item_name')
 
         product_list.append({
             'name': name,
@@ -124,12 +125,13 @@ def custom_serialization(data):
             if i < len(data) - 1:
                 result += ", "
         result += "; "
+    elif isinstance(data, int):
+        result += f"int({data})"
+    elif isinstance(data, float):
+        result += f"float({data})"
     elif isinstance(data, str):
         result += f"str({data})"
-    elif isinstance(data, int):
-        result += f"str({data})"
-    elif isinstance(data, float):
-        result += f"str({data})"
+
     return result
 
 
@@ -162,8 +164,8 @@ def custom_deserialization(data):
             idx += 1
             return result
 
-        elif data.startswith("str(", idx):
-            idx += 4
+        elif data.startswith("str(", idx) or data.startswith("int(", idx) or data.startswith("float(", idx):
+            idx += 6 if data.startswith("float(", idx) else 4
             end_idx = data.index(")", idx)
             value = data[idx:end_idx]
             idx = end_idx + 1

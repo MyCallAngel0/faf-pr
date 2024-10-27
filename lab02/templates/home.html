@@ -1,0 +1,43 @@
+<!-- templates/laptops/laptop_list.html -->
+{% extends "base_generic.html" %}
+
+{% block title %}Laptop List{% endblock %}
+
+{% block content %}
+  <div class="text-center my-4">
+    <h2>Laptop List</h2>
+    <a class="btn btn-primary mb-3" href="{% url 'Add Laptop' %}"><i class="fas fa-plus"></i> Add Laptop</a>
+  </div>
+
+  <div class="list-group">
+    {% for laptop in laptops %}
+      <a href="{% url 'Laptop' laptop.pk %}" class="list-group-item list-group-item-action">
+        <h5 class="mb-1">{{ laptop.name }}</h5>
+        <p class="mb-1"><strong>Brand:</strong> {{ laptop.brand }}</p>
+        <p class="mb-1"><strong>Price:</strong> {{ laptop.price }} {{ laptop.get_currency_display }}</p>
+      </a>
+    {% empty %}
+      <div class="alert alert-warning" role="alert">
+        No laptops available.
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="pagination justify-content-center mt-4">
+    <span class="step-links">
+      {% if laptops.has_previous %}
+        <a class="btn btn-link" href="?page=1">&laquo; First</a>
+        <a class="btn btn-link" href="?page={{ laptops.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      <span class="current">
+        Page {{ laptops.number }} of {{ laptops.paginator.num_pages }}.
+      </span>
+
+      {% if laptops.has_next %}
+        <a class="btn btn-link" href="?page={{ laptops.next_page_number }}">Next</a>
+        <a class="btn btn-link" href="?page={{ laptops.paginator.num_pages }}">Last &raquo;</a>
+      {% endif %}
+    </span>
+  </div>
+{% endblock %}

@@ -1,3 +1,5 @@
+import datetime
+
 from bs4 import BeautifulSoup
 import requests, json, functools
 
@@ -5,11 +7,10 @@ import requests, json, functools
 url = 'https://darwin.md/laptopuri'
 
 response = requests.get(url)
-# print(response.content)
 
 # Task 3
 soup = BeautifulSoup(response.content, 'html.parser')
-products = soup.find_all('a', attrs={'data-ga4': True}, title=True)
+products = soup.find_all('a', attrs={'data-ga4': True})
 
 product_list = []
 
@@ -19,9 +20,10 @@ for product in products:
 
     data_ga4 = json.loads(product['data-ga4'])
 
-    name = product['title']
-
     ecommerce = data_ga4.get('ecommerce', {})
+    items = ecommerce.get('items', [])
+    name = items[0].get('item_name')
+
     price = ecommerce.get('value')
     currency = ecommerce.get('currency')
 
@@ -52,13 +54,12 @@ for product in products:
 
     data_ga4 = json.loads(product['data-ga4'])
 
-    name = product['title']
-
     ecommerce = data_ga4.get('ecommerce', {})
     price = ecommerce.get('value')
     currency = ecommerce.get('currency')
 
     items = ecommerce.get('items', [])
+    name = items[0].get('item_name')
     brand = items[0].get('item_brand')
 
     product_list.append({
@@ -130,5 +131,6 @@ with open('files/products-task-six.txt', 'w', encoding='utf-8') as file:
         id += 1
 
     som = functools.reduce(lambda a, b: a + b['price'], filtered_list, 0.0)
-    file.write(f"Sum of prices: {som} EUR")
+    file.write(f"Sum of prices: {som} EUR\n")
+    file.write(str(datetime.datetime.now(datetime.UTC)))
 

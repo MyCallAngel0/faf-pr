@@ -1,71 +1,30 @@
 Id: 1
-Name: Laptop Lenovo IdeaPad 5 15IAL7-GXRK Cloud Gray
+Name: Laptop Lenovo IdeaPad Slim 3 16IAH8-07RK Arctic Gray
 Brand: Lenovo
-Price: 594.72
+Price: 563.66
 Currency: EUR
-Link: https://darwin.md/laptop-lenovo-ideapad-5-15ial7-core-i5-1235u-16-gb-512-gb-vga-integrata-gray.html
+Link: https://darwin.md/laptop-lenovo-ideapad-slim-3-16iah8-07rk-core-i5-12450h-16-gb-1-tb-vga-integrata-gray.html
 
 Id: 2
-Name: Laptop Lenovo IdeaPad 5 15IAL7-GXRK Cloud Gray
-Brand: Lenovo
-Price: 594.72
+Name: Laptop Asus Vivobook 16X M1603QA Transparent Silver
+Brand: Asus
+Price: 698.24
 Currency: EUR
-Link: https://darwin.md/laptop-lenovo-ideapad-5-15ial7-core-i5-1235u-16-gb-512-gb-vga-integrata-gray.html
+Link: https://darwin.md/laptop-asus-vivobook-16x-m1603qa-transparent-silver.html
 
 Id: 3
-Name: Laptop Asus Vivobook 17X K3704VA-AU051 Indie Black
-Brand: Asus
-Price: 646.48
+Name: Laptop Lenovo IdeaPad 1 15ALC7-AHRK Gray
+Brand: Lenovo
+Price: 568.84
 Currency: EUR
-Link: https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html
+Link: https://darwin.md/laptop-lenovo-ideapad-1-15alc7-ryzen-7-5700u-8-gb-512-gb-vga-integrata-gray.html
 
 Id: 4
-Name: Laptop Asus Vivobook 17X K3704VA-AU051 Indie Black
-Brand: Asus
-Price: 646.48
+Name: Laptop Lenovo IdeaPad Slim 3 16IAH8 Arctic Gray
+Brand: Lenovo
+Price: 511.9
 Currency: EUR
-Link: https://darwin.md/laptop-asus-vivobook-17x-k3704va-au051-core-i5-13500h-16-gb-512-gb-vga-integrata-black.html
+Link: https://darwin.md/laptop-lenovo-ideapad-slim-3-16iah8-core-i5-12450h-16-gb-512-gb-vga-integrata-gray.html
 
-Id: 5
-Name: Laptop Asus VivoBook 15 X1504ZA Quiet Blue
-Brand: Asus
-Price: 594.72
-Currency: EUR
-Link: https://darwin.md/laptop-asus-vivobook-15-x1504za-core-i7-1255u-16-gb-512-gb-vga-integrata-blue.html
-
-Id: 6
-Name: Laptop Asus VivoBook 15 X1504ZA Quiet Blue
-Brand: Asus
-Price: 594.72
-Currency: EUR
-Link: https://darwin.md/laptop-asus-vivobook-15-x1504za-core-i7-1255u-16-gb-512-gb-vga-integrata-blue.html
-
-Id: 7
-Name: Laptop Acer Nitro V 15 ANV15-41-R1ZV Black
-Brand: Acer
-Price: 724.12
-Currency: EUR
-Link: https://darwin.md/laptop-acer-nitro-v-15-anv15-41-r1zv-ryzen-5-7535hs-16-gb-geforce-rtx-2050-black.html
-
-Id: 8
-Name: Laptop Acer Nitro V 15 ANV15-41-R1ZV Black
-Brand: Acer
-Price: 724.12
-Currency: EUR
-Link: https://darwin.md/laptop-acer-nitro-v-15-anv15-41-r1zv-ryzen-5-7535hs-16-gb-geforce-rtx-2050-black.html
-
-Id: 9
-Name: Laptop Asus Vivobook 17X M3704YA Indie Black
-Brand: Asus
-Price: 542.96
-Currency: EUR
-Link: https://darwin.md/laptop-asus-vivobook-17x-m3704ya-ryzen-5-7430u-16-gb-512-gb-vga-integrata-black.html
-
-Id: 10
-Name: Laptop Asus Vivobook 17X M3704YA Indie Black
-Brand: Asus
-Price: 542.96
-Currency: EUR
-Link: https://darwin.md/laptop-asus-vivobook-17x-m3704ya-ryzen-5-7430u-16-gb-512-gb-vga-integrata-black.html
-
-Sum of prices: 6206.0 EUR
+Sum of prices: 2342.6400000000003 EUR
+2024-10-25 09:02:16.171886+00:00

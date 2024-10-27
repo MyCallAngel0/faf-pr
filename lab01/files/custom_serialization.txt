@@ -1,1 +1,1 @@
-A:[D:k:str(key1):v:A:[str(2.5)str(20)str(18)], k:str(key2):v:str(hello);]
+A:[D:k:str(key1):v:A:[float(2.5)int(20)int(18)], k:str(key2):v:str(hello);]
