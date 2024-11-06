@@ -21,5 +21,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('laptops/', include('app.urls')),
-    path('upload', views.get_json)
+    path('upload', views.get_json),
+    path('', include('chat.urls'))
 ]

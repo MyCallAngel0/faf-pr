@@ -1,4 +1,3 @@
-<!-- templates/laptops/laptop_detail.html -->
 {% extends "base_generic.html" %}
 
 {% block title %}{{ object.name }}{% endblock %}
@@ -10,7 +9,6 @@
       <div class="card-body">
         <h5 class="card-title"><strong>Brand:</strong> {{ object.brand }}</h5>
         <p class="card-text"><strong>Price:</strong> {{ object.price }} {{ object.get_currency_display }}</p>
-        <p class="card-text"><strong>Link:</strong> <a href="{{ object.link }}" target="_blank">{{ object.link }}</a></p>
 
         <a class="btn btn-secondary" href="{% url 'Update Laptop' object.pk %}"><i class="fas fa-edit"></i> Edit</a>
         <form action="{% url 'Delete Laptop' object.pk %}" method="POST" style="display:inline;">

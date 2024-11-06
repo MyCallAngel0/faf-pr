@@ -6,8 +6,8 @@ from .forms import LaptopForm
 
 
 def home(request):
-    laptops = Laptop.objects.all()
-    paginator = Paginator(laptops, 5)  # Show 5 laptops per page.
+    laptops = Laptop.objects.all().order_by('-id')
+    paginator = Paginator(laptops, 5)
 
     page_number = request.GET.get('page')
     laptops_page = paginator.get_page(page_number)
