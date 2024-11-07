@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:13
+    container_name: django_postgres
+    environment:
+      POSTGRES_DB: DOTAbase
+      POSTGRES_USER: justKidding
+      POSTGRES_PASSWORD: hahaha
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: django_web
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db  # Ensure db service is started before web service
+
+volumes:
+  postgres_data:
+    driver: local  # Persist database data even if the container is removed
