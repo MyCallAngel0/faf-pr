@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Lobby</title>
+</head>
+<body>
+    <h2>Join a Chat Room</h2>
+    <form id="room-form">
+        <label for="room_name">Room name:</label>
+        <input id="room_name" type="text" name="room_name" required>
+        <button type="button" onclick="joinRoom()">Join</button>
+    </form>
+
+    <script>
+        function joinRoom() {
+            const roomName = document.getElementById('room_name').value;
+            if (roomName) {
+                window.location.href = `/room/${roomName}/`;  // Redirect to the room URL
+            } else {
+                alert("Please enter a room name.");
+            }
+        }
+    </script>
+</body>
+</html>

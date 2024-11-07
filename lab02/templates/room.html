@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Room {{ room_name }}</title>
+</head>
+<body>
+    <h1>Chat Room: {{ room_name }}</h1>
+
+    <form id="form">
+        <input type="text" name="message" autocomplete="off"/>
+        <button type="submit">Send</button>
+    </form>
+
+    <button id="leave-room">Leave Room</button>
+
+    <div id="messages"></div>
+
+    <script>
+        const roomName = "{{ room_name }}";
+        const chatSocket = new WebSocket(
+            `ws://${window.location.host.replace(/:.*/, ':8001')}/ws/socket-server/${roomName}/`
+        );
+
+        chatSocket.onmessage = function(e) {
+            const data = JSON.parse(e.data);
+            if (data.type === 'chat') {
+                const messages = document.getElementById('messages');
+                messages.insertAdjacentHTML('beforeend', `<div><p>${data.message}</p></div>`);
+            }
+        };
+
+        const form = document.getElementById('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = e.target.message.value;
+            chatSocket.send(JSON.stringify({ 'message': message }));
+            form.reset();
+        });
+
+        let leaveButton = document.getElementById('leave-room')
+        leaveButton.addEventListener('click', () => {
+            window.location.href = `/chat`;
+            alert("You have left the room.")
+        })
+    </script>
+</body>
+</html>
